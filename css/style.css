@@ -394,3 +394,57 @@ button {
 .about-text .btn {
     margin: 0 15px 15px 0;
 }
+
+/* ------------- Portfolio Section */
+
+.portfolio-section {
+    padding-bottom: 50px;
+}
+
+.portfolio-item {
+    width: calc((100% / 3)- 30px);
+    margin: 0 15px 30px;
+}
+
+.portfolio-item-thumbnail {
+    padding: 10px;
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    border-radius: 10px;
+}
+
+.portfolio-item-thumbnail img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.portfolio-item h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+
+.portfolio-item-details {
+    display: none;
+}
+
+/* Portfolio popup */
+
+.portfolio-popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 200;
+}
+
+.pp-inner {
+    min-height: 100vh;
+    padding: 40px 15px;
+}
+
+.pp-content {
+    background-color: var(--white-alpha-25);
+    padding: 30px;
+}
