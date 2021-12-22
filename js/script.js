@@ -3,7 +3,7 @@ const tabsContainer = document.querySelector('.about-tabs'),
 aboutSection = document.querySelector('.about-section');
 
 // function that's switching between "education" and "experience" content
-tabsContainer.addEventListener('click', (e) => {
+tabsContainer.addEventListener('click', (e) => {           // arrow function with e as a parameter
     if (e.target.classList.contains('tab-item') && !e.target.classList.contains('active')) {
         tabsContainer.querySelector('.active').classList.remove('active');
         e.target.classList.add('active');
@@ -11,4 +11,37 @@ tabsContainer.addEventListener('click', (e) => {
         aboutSection.querySelector('.tab-content.active').classList.remove('active');
         aboutSection.querySelector(target).classList.add('active');
     }
+});
+
+// Portfolio Item Details PopUp ---------------------//
+document.addEventListener('click', (e) => {
+    if(e.target.classList.contains('view-project-btn')) {
+        togglePortfolioPopup();
+        document.querySelector('.portfolio-popup').scrollTo(0,0);
+        portfolioItemDetails(e.target.parentElement);
+    }
 })
+function togglePortfolioPopup() {
+    document.querySelector('.portfolio-popup').classList.toggle('open');
+    document.body.classList.toggle('hide-scrolling');
+    document.querySelector('.main').classList.toggle('fade-out');
+}
+document.querySelector('.pp-close').addEventListener('click', togglePortfolioPopup);
+
+// Hide Popup when clicking outside of the window
+document.addEventListener('click', (e) => {
+    if(e.target.classList.contains('pp-inner')) {
+        togglePortfolioPopup();
+    }
+});
+
+function portfolioItemDetails(portfolioItem) {
+    document.querySelector('.pp-thumbnail img').src =
+    portfolioItem.querySelector('.portfolio-item-thumbnail img').src;
+
+    document.querySelector('.pp-header h3').innerHTML =
+    portfolioItem.querySelector('.portfolio-item-title').innerHTML;
+
+    document.querySelector('.pp-body').innerHTML =
+    portfolioItem.querySelector('.portfolio-item-details').innerHTML;
+}
