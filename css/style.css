@@ -3,13 +3,13 @@
 
 /* variables */
 :root{
-    --main-color: #e02f6b;
+    --main-color: #387be0;
     --blue:#0000ff;
     --blue-dark:#18293c;
     --orange:#ffa500;
     --green-yellow:#cddc39;
-    --pink-light:#efa2b4;
-    --cyan-light:#aef1ee;
+    --pink-light:#39a7e7;
+    --cyan-light:#be48f5;
     --white:#ffffff;
     --white-alpha-40:rgba(255,255,255,0.40);
     --white-alpha-25:rgba(255,255,255,0.25);
@@ -255,6 +255,15 @@ button {
     }
 }
 
+@keyframes bounceTop2 {
+    0%, 100% {
+        transform: translateY(-65px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
 @keyframes spin {
     0%{
         transform: rotate(0deg);
@@ -317,6 +326,26 @@ button {
     top: 80%;
     left: -30px;
     opacity: 0.6;
+}
+
+.bg-circles .circle-5 {
+    height: 70px;
+    width: 70px;
+    background-color: var(--green-yellow);
+    right: 20%;
+    top: 80%;
+    opacity: 0.4;
+    animation: bounceTop2 4s ease-in-out infinite;  /* this is set in Keyframes :) */
+}
+
+.bg-circles .circle-6 {
+    height: 50px;
+    width: 50px;
+    background-color: var(--white);
+    right: 15%;
+    top: 10%;
+    opacity: 0.3;
+    animation: zoomInOut 8s linear infinite;  /* this is set in Keyframes :) */
 }
 
 /*-------- Overlay */
