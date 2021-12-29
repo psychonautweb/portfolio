@@ -272,6 +272,7 @@ button {
     bottom: 0;
     left: 0;
     box-shadow: 0 0 2em 0.5em var(--clr-neon);
+    border-radius: 1.5em;
     opacity: 0;
     background-color: var(--clr-neon);
     z-index: -1;
