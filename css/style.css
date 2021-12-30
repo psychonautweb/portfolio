@@ -281,8 +281,9 @@ button {
 
 .neon-btn:hover,
 .neon-btn:focus {
-    color: var(--clr-bg);
+    color: var(--blue-dark);
     text-shadow: none;
+    font-weight: 500;
 }
 
 .neon-btn:hover::before,
