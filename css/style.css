@@ -251,13 +251,12 @@ button {
     pointer-events: none;    /* this makes the bottom part where shadow is "unclickable" */
     content: '';
     position: absolute;
-    top: 110%;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     width: 100%;
     height: 100%;
-    background: var(--clr-neon);
 
     transform: perspective(1.5em) rotateX(40deg) scale(1, 0.4);  /* without perspective it wouldn't work same way */
     filter: blur(0.8em);
@@ -274,14 +273,14 @@ button {
     box-shadow: 0 0 2em 0.5em var(--clr-neon);
     border-radius: 1.5em;
     opacity: 0;
-    background-color: var(--clr-neon);
+    background-color: var(--pink-light);
     z-index: -1;
     transition: opacity 100ms linear;
 }
 
 .neon-btn:hover,
 .neon-btn:focus {
-    color: var(--blue-dark);
+    color: var(--white);
     text-shadow: none;
     font-weight: 500;
 }
