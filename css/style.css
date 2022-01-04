@@ -10,6 +10,7 @@
     --green-yellow:#cddc39;
     --pink-light:#39a7e7;
     --cyan-light:#be48f5;
+    --neon-green:rgb(68, 242, 62);
     --white:#ffffff;
     --white-alpha-40:rgba(255,255,255,0.40);
     --white-alpha-25:rgba(255,255,255,0.25);
@@ -225,7 +226,7 @@ button {
 .neon-btn {
     font-size: 1rem;
 
-    display: inline-block;
+    /* display: inline-block; */
     cursor: pointer;
     text-decoration: none;
     color: var(--clr-neon);
@@ -388,8 +389,8 @@ button {
 .bg-circles .circle-3 {
     height: 120px;
     width: 120px;
-    background-color: var(--white);
-    top: 40%;
+    background-color: var(--orange);
+    top: 20%;
     right: -60px;
     opacity: 0.6;
 }
