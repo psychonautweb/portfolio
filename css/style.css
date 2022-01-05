@@ -11,6 +11,7 @@
     --pink-light:#39a7e7;
     --cyan-light:#be48f5;
     --neon-green:rgb(68, 242, 62);
+    --green-bright: #00ff66;
     --white:#ffffff;
     --white-alpha-40:rgba(255,255,255,0.40);
     --white-alpha-25:rgba(255,255,255,0.25);
@@ -389,7 +390,7 @@ button {
 .bg-circles .circle-3 {
     height: 120px;
     width: 120px;
-    background-color: var(--orange);
+    background-color: var(--green-bright);
     top: 20%;
     right: -60px;
     opacity: 0.6;
@@ -398,8 +399,8 @@ button {
 .bg-circles .circle-4 {
     height: 50px;
     width: 50px;
-    background-color: var(--orange);
-    top: 80%;
+    background-color: var(--green-bright);
+    top: 20%;
     left: -30px;
     opacity: 0.6;
 }
@@ -492,6 +493,17 @@ button {
     border-color: var(--orange);
 }
 
+/* -------Header - Nav Bar *** */
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 1rem;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
 
 /* -------Header */
 
@@ -516,19 +528,7 @@ button {
 }
 
 .header .nav-toggler {
-    width: 50px;
-    height: 50px;
-    border: none;
-    cursor: pointer;
-    border-radius: 50%;
-    background-color: var(--white-alpha-25);
-    border: 1px solid var(--white-alpha-40);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 15px;
-    z-index: 1;
-    transition: opacity 0.3s ease-in-out;
+    display: none;
 }
 
 .header .nav-toggler.hide {
@@ -651,6 +651,7 @@ button {
 .header .nav-inner ul li a:hover {
     color: var(--main-color);
 }
+
 
 /* -----------------Home section */
 
@@ -1111,6 +1112,26 @@ button {
 }
 
 @media (max-width: 575px) {
+
+    .header .nav-toggler {
+            width: 50px;
+            height: 50px;
+            border: none;
+            cursor: pointer;
+            border-radius: 50%;
+            background-color: var(--white-alpha-25);
+            border: 1px solid var(--white-alpha-40);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 15px;
+            z-index: 1;
+            transition: opacity 0.3s ease-in-out;
+    }
+
+    .nav-bar {
+        display: none;
+    }
 
     .section-title h2,
     .header .nav-inner ul li a {
