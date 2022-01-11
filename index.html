@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -57,11 +60,15 @@
 <header class="header">
   <div class="container">
     <div class="nav-bar">
-      <li><a href="#home" class="btn link-item">home</a></li>
-      <li><a href="#about" class="btn  link-item">about</a></li>
-      <li><a href="#portfolio" class="btn link-item">portfolio</a></li>
-      <li><a href="#contact" class="btn link-item">contact</a></li>
-    </div>
+      <div class="header-panel">
+        <ul class="main-menu-bar">
+            <li><a href="#home" class="link-item">Home</a></li>
+            <li><a href="#about" class="link-item">About</a></li>
+            <li><a href="#portfolio" class="link-item">Portfolio</a></li>
+            <li><a href="#contact" class="link-item">Contact</a></li>
+        </ul>
+    </div> 
+    </div> 
     <div class="row flex-end">
       <button type="button" class="nav-toggler">
         <span></span>
@@ -90,13 +97,12 @@
           <p>Hello World, I'm</p>
           <h1>Dubravko</h1>
           <h2>FrontEnd Web Developer</h2>
-          <a href="#about" class="btn link-item">about me</a>
-          <a href="#portfolio" class="btn link-item">portfolio</a>
-          <div class="social-links">
+          <div class="social-links"> <span>{
             <a href="https://www.facebook.com/dubravko.cajic/" target="_blank"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/dubravko.cajic/" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://github.com/psychonautweb" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://twitter.com/dubravkocajic" target="_blank"><i class="fab fa-twitter"></i></a>
+            }</span>
           </div>
         </div>
         <div class="home-img">
@@ -105,10 +111,7 @@
           </div>
         </div>
       </div>
-
-
     </div>
-
   </section>
   <!-- Home Section End -->
 
@@ -131,17 +134,18 @@
         <h3>skills</h3>
         <div class="skills">
           <div class="skill-item">HTML</div>
-          <div class="skill-item">CSS</div>
-          <div class="skill-item">JavaScript</div>
-          <div class="skill-item">Wordpress (basics)</div>
-          <div class="skill-item">Gatsby (basics)</div>
-          <div class="skill-item">GIT (basics)</div>
+          <div class="skill-item">CSS5</div>
+          <div class="skill-item">CSS Flexbox model</div>
+          <div class="skill-item">CSS responsive design and media queries</div>
+          <div class="skill-item">JavaScript basics</div>
+          <div class="skill-item">GIT basics:</div>
           <div class="skill-item">Education</div>
           <div class="skill-item">Photography</div>
           <div class="skill-item">Biology</div>
           <div class="skill-item">Linux</div>
           <div class="skill-item">Windows troubleshooting</div>
           <div class="skill-item">Aloha POS</div>
+          <p>The list of my skills is still work in progress. So far I've managed to grasp <b>basics</b> of various skills related to Web development: Wordpress, Gatsby SSG, SEO optimization, Hosting a Website, Setting up a domain ...</p>
         </div>
 
         <div class="about-tabs">
@@ -226,13 +230,13 @@
               <button type="button" class="btn view-project-btn">view project</button>
               <div class="portfolio-item-details">
                 <div class="description">
-                  <p>This website was done for a local dental practice. It was great learning experience as I had to plan everything from code, hosting, domain and SEO optimization. Core part of the site was set up by using combo of Stackbit visual editor and code editor. It is served over Netlify's CDN, loads up amazingly fast and is responsive.</p>
+                  <p>This website was done for a local dental practice. It was great learning experience as I had to plan everything from code, hosting, domain and SEO optimization. Core part of the site was set up by using combo of Stackbit visual editor and code editor. It is served over Netlify's CDN, loads up amazingly fast and is fully responsive.</p>
                 </div>
                 <div class="general-info">
                   <ul>
                     <li>Created - <span>1 Dec 2021</span></li>
                     <li>Technologies used - <span>JAMSTACK: Stackbit Visual Editor, Gatsby SSG, React, JS, HTML, CSS</span></li>
-                    <li>Role - <span>Frontend</span></li>
+                    <li>Role - <span>Designed basic layout in visual editor. Due to limitations of visual editor further modifications were made in code editor, mostly to CSS, markdown and forms. In some cases I had to touch and edit some React code (e.g. to remove time and date from blog posts, to add HTML lang attribute etc.)</span></li>
                     <li>View Live - <span><a href="https://www.dentoteam.net" target="_blank">www.dentoteam.net</a></span></li>
                   </ul>
                 </div>
@@ -257,7 +261,7 @@
                         <ul>
                           <li>Work in progress - <span>TBD(2022)</span></li>
                           <li>Technologies used - <span>HTML, CSS, JS</span></li>
-                          <li>Role - <span>Frontend and Backend</span></li>
+                          <li>Role - <span>Frontend</span></li>
                           <li>View Live - <span><a href="#">www.windoorplast.com</a></span></li>
                         </ul>
                     </div>
