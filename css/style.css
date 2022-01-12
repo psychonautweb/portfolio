@@ -430,7 +430,7 @@ button {
     gap: 1rem;
     justify-content: center;
     margin-left: 1rem;
-    box-shadow: 1px 1px 8px var(--blue-dark);
+    box-shadow: 1px 1px 8px #5b70a1;
     border-radius: 10px;
 }
 
@@ -447,12 +447,15 @@ button {
 	display: block;
 
     color: var(--white);
-    font-weight: 700;
-	font-size: 19px;
+    font-weight: 500;
+	font-size: 18px;
+    font-family: inherit;
+    text-shadow: 1px 1px 0px #3b7fcb;
 }
 
 .main-menu-bar a:hover {
 	color: var(--main-color);
+    text-shadow: none;
 }
 
 
@@ -1023,6 +1026,24 @@ button {
 .contact-info-item .social-links a:hover {
     color: var(--white);
     background-color: var(--main-color);
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+footer a {
+    font-family: inherit;
+    color: var(--white-alpha-40);
+    z-index: 1;
 }
 
 /* Responsive --------------   */
