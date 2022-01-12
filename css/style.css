@@ -395,7 +395,7 @@ button {
 .page-loader div {
     border: 2px solid transparent;
     position: absolute;
-    border-radius: 10px;
+    border-radius: 50%;
     opacity: 0.6;
     border-top-color: transparent !important;
     border-bottom-color: transparent !important;
@@ -411,14 +411,14 @@ button {
 .page-loader div:nth-child(2) {
     height: 45px;
     width: 45px;
-    border-color: var(--blue);
+    border-color: var(--bright-pink);
     animation-duration: 1.2s ;
 }
 
 .page-loader div:nth-child(3) {
     height: 30px;
     width: 30px;
-    border-color: var(--orange);
+    border-color: var(--green-yellow);
 }
 
 /* -------Header - Nav Bar------- */
