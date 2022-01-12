@@ -220,77 +220,7 @@ button {
     color: var(--white);
 }
 
-/* Neon Button */
 
-.neon-btn {
-    font-size: 1rem;
-
-    /* display: inline-block; */
-    cursor: pointer;
-    text-decoration: none;
-    color: var(--clr-neon);
-    border: var(--clr-neon) 0.125em solid;
-    border-radius: 1.5em;
-    padding: 0.25em 1em;
-
-    text-shadow:          /* we are putting 2 text shadows here */
-    0 0 0.125em hsl(0 0% 100% / 0.3),
-    0 0 0.25em currentColor ; /* 0 ofset 0 ofest 0.25em of Blur effect // currentColor is same as color from var */
-    
-    box-shadow: inset 0 0 0.5em 0 var(--clr-neon),  /* inset adds shadow to the inside of element */
-    0 0 0.5em 0 var(--clr-neon);
-    position: relative;
-    top: 42px;
-    left: 15px;
-
-
-    /* transition: background-color 500ms linear;  after you move the pointer from button */
-}
-
-.neon-btn::before {
-    pointer-events: none;    /* this makes the bottom part where shadow is "unclickable" */
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    transform: perspective(1.5em) rotateX(40deg) scale(1, 0.4);  /* without perspective it wouldn't work same way */
-    filter: blur(0.8em);
-    opacity: 0.7;
-}
-
-.neon-btn::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    box-shadow: 0 0 2em 0.5em var(--clr-neon);
-    border-radius: 1.5em;
-    opacity: 0;
-    /* background-color: var(--white); */
-    z-index: -1;
-    transition: opacity 100ms linear;
-}
-
-.neon-btn:hover,
-.neon-btn:focus {
-    color: var(--pale-blue);
-    background-color: var(--pale-blue);
-    text-shadow: none;
-    font-weight: 500;
-}
-
-.neon-btn:hover::before,
-.neon-btn:focus::before,
-.neon-btn:hover::after,
-.neon-btn:focus::after  {
-    opacity: 1;
-}
 
 /* --------Animation Keyframes */
 
@@ -491,7 +421,7 @@ button {
     border-color: var(--orange);
 }
 
-/* -------Header - Nav Bar *** */
+/* -------Header - Nav Bar------- */
 
 .nav-bar {
     display: flex;
@@ -500,9 +430,9 @@ button {
     gap: 1rem;
     justify-content: center;
     margin-left: 1rem;
+    box-shadow: 1px 1px 8px var(--blue-dark);
+    border-radius: 10px;
 }
-
-/*      -----------     MENU BAR NAV  --------        */
 
 .main-menu-bar {
     display: flex;
@@ -905,7 +835,7 @@ button {
 }
 
 .portfolio-item {
-    width: calc((100% / 3)- 30px);
+    width: calc((100% / 2) - 30px); /* will change this as portfolio items are added. If 3 add /3 and so on  */
     margin: 0 15px 30px;
 }
 
