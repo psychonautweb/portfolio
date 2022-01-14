@@ -292,7 +292,7 @@ button {
 
 .bg-circles div {
     position: absolute;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 
 .bg-circles .circle-1 {
@@ -302,7 +302,7 @@ button {
     left: 16%;
     top: 22%;
     opacity: 0.3;
-    animation: zoomInOut 8s linear infinite;  /* this is set in Keyframes :) */
+    /* animation: zoomInOut 8s linear infinite;  this is set in Keyframes :) */
 }
 
 .bg-circles .circle-2 {
@@ -312,7 +312,7 @@ button {
     left: 30%;
     top: 50%;
     opacity: 0.4;
-    animation: bounceTop 5s ease-in-out infinite;  /* this is set in Keyframes :) */
+    /* animation: bounceTop 5s ease-in-out infinite;  this is set in Keyframes :) */
 }
 
 .bg-circles .circle-3 {
@@ -340,7 +340,7 @@ button {
     right: 20%;
     top: 80%;
     opacity: 0.4;
-    animation: bounceTop2 4s ease-in-out infinite;  /* this is set in Keyframes :) */
+    /* animation: bounceTop2 4s ease-in-out infinite;  this is set in Keyframes :) */
 }
 
 .bg-circles .circle-6 {
@@ -350,8 +350,51 @@ button {
     right: 15%;
     top: 10%;
     opacity: 0.3;
-    animation: zoomInOut 8s linear infinite;  /* this is set in Keyframes :) */
+    /* animation: zoomInOut 8s linear infinite;  this is set in Keyframes :) */
 }
+/* -------------- Squares ------------- */
+
+.bg-squares {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    max-width: 1200px;
+    width: calc(100% - 30px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bg-squares div {
+    position: absolute;
+}
+.square-1 {
+    height: 46px;
+    width: 46px;
+    background-color: var(--bright-pink);
+    right: 99%;
+    top: 76%;
+    opacity: 0.3;
+}
+
+.square-2 {
+    height: 60px;
+    width: 60px;
+    background-color: var(--white);
+    right: 35%;
+    top: 40%;
+    opacity: 0.3;
+}
+
+.square-3 {
+    height: 90px;
+    width: 90px;
+    background-color: var(--white);
+    right: -4%;
+    top: 72%;
+    opacity: 0.3;
+    border-radius: none;
+}
+
 
 /*-------- Overlay */
 
