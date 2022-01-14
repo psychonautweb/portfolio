@@ -366,6 +366,7 @@ button {
 
 .bg-squares div {
     position: absolute;
+    border-radius: 10%;
 }
 .square-1 {
     height: 46px;
