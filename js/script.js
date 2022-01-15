@@ -96,4 +96,34 @@ function portfolioItemDetails(portfolioItem) {
     portfolioItem.querySelector('.portfolio-item-details').innerHTML;
 }
 
+// Typing effect
 
+let txt = document.getElementById('hello-text');
+let txtTyped = 'Hello World, I\'m';
+let index = 0, isAdding = true;
+
+function playAnimation() {
+    setTimeout(function () {
+        txt.innerText = txtTyped.slice(0, index);
+        if(isAdding) {
+            if(index > txtTyped.length) {
+                isAdding = false;
+
+                setTimeout(function () {
+                    playAnimation()
+                }, 2000);
+                return;
+            } else {
+                index++
+            }
+        } else {
+            if (index === 0) {
+                isAdding = true;
+            } else {
+                index --
+            }
+        }
+        playAnimation();
+    }, 100);
+};
+playAnimation();
