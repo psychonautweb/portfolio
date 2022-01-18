@@ -498,10 +498,10 @@ button {
 }
 
 .main-menu-bar a:hover {
-	color: var(--main-color);
+	color: var(--white);
     text-shadow: none;
+    background-color: #387be06e;
 }
-
 
 .header-panel {
     width: 100%;
@@ -1034,6 +1034,7 @@ button {
 
 .contact-form .input-control:focus {
     border-color: var(--white-alpha-40);
+    background-color: #d3d6f3;
 }
 
 .contact-form textarea.input-control {
@@ -1075,6 +1076,7 @@ button {
 .social-links {
     margin-top: 1rem;
 }
+
 
 /* Footer */
 
@@ -1180,7 +1182,7 @@ footer a {
 }
 
 
-
+/*  Typing effect  */
 
 #hello-text::after {
     content: "|";
