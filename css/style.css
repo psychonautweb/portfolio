@@ -1010,6 +1010,10 @@ button {
     margin-bottom: 30px;
 }
 
+.input-group h2 {
+    padding: 0.5rem;
+}
+
 .contact-form .input-control::placeholder {
     color: var(--blue-dark);
     opacity: 0.8;
@@ -1034,7 +1038,7 @@ button {
 
 .contact-form .input-control:focus {
     border-color: var(--white-alpha-40);
-    background-color: #d3d6f3;
+    background-color: #ffffffba;
 }
 
 .contact-form textarea.input-control {
