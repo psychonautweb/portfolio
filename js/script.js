@@ -99,7 +99,7 @@ function portfolioItemDetails(portfolioItem) {
 // Typing effect
 
 let txt = document.getElementById('hello-text');
-let txtTyped = 'Hello World, I\'m';
+let txtTyped = 'Frontend Web Developer';
 let index = 0, isAdding = true;
 
 function playAnimation() {
