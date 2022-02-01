@@ -686,6 +686,10 @@ button {
     font-size: 18px;
 }
 
+.home-text p:last-of-type {
+    padding: 1rem 0;
+}
+
 .home-text h1 {
     font-size: 50px;
     text-transform: capitalize;
@@ -1178,7 +1182,7 @@ footer a {
         font-size: 30px;
     }
     .home-text h2 {
-        font-size: 18px;
+        font-size: 15px;
     }
     .pp-header h3 {
         font-size: 20px;
