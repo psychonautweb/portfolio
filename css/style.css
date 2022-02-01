@@ -500,7 +500,7 @@ button {
 .main-menu-bar a:hover {
 	color: var(--white);
     text-shadow: none;
-    background-color: #387be06e;
+    background-color: #49adcbab;
 }
 
 .header-panel {
