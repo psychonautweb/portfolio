@@ -220,6 +220,13 @@ button {
     color: var(--white);
 }
 
+.btn.pp-close {
+    background-color: #73c0b8;
+}
+.btn.pp-close:hover {
+    background-color: var(--white-alpha-40);
+    transform: scale(1.1);
+}
 
 
 /* --------Animation Keyframes */
@@ -669,7 +676,7 @@ button {
 /* -----------------Home section */
 
 .home-section {
-    padding: 120px 0;
+    padding: 7.5rem 0 0 0;
 }
 
 .home-section.active {
@@ -1003,10 +1010,14 @@ button {
 
 /* Contact Section */
 
-.contact-form,
+.contact-form {
+    width: 80%;
+    padding: 0 1rem;
+}
+
 .contact-info {
-    width: 50%;
-    padding: 0 15px;
+    width: 100%;
+    padding: 0 1rem;
 }
 
 .contact-form .input-group {
@@ -1014,8 +1025,15 @@ button {
     margin-bottom: 30px;
 }
 
+.col-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 2rem;
+}
+
 .input-group h2 {
-    padding: 0.5rem;
+    padding: 0.3rem;
+    font-size: 1.3rem;
 }
 
 .contact-form .input-control::placeholder {
@@ -1085,6 +1103,26 @@ button {
     margin-top: 1rem;
 }
 
+/* Tech stack Bar  */
+
+#tech-stack {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(89deg, #5eb1962e, #5eb1962e);
+    margin: 1rem;
+  }
+
+.tech-img {
+    height: 2.5rem;
+    margin: 1rem;
+    background-color: var(--white-alpha-40);
+    border: 1px solid var(--white-alpha-25);
+    border-radius: 5px;
+}
+
+.tech-img:hover {
+    transform: scale(1.5);
+}
 
 /* Footer */
 
@@ -1125,9 +1163,18 @@ footer a {
     .portfolio-item {
         width: calc(50% - 30px);
     }
+    .contact-info-item .social-links a {
+        height: 36px;
+        width: 36px;
+    }
 }
 
 @media (max-width: 767px) {
+
+    .row {
+        display: flex;
+        flex-flow: row wrap;
+    }
     .contact-form, 
     .contact-info,
     .about-img,
@@ -1186,6 +1233,14 @@ footer a {
     }
     .pp-header h3 {
         font-size: 20px;
+    }
+
+    #tech-stack {
+        background-image: none;
+    }
+
+    .tech-img {
+        margin: 0.3rem;
     }
 }
 
